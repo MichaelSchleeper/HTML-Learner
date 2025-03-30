@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.par{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+
+.image{
+   margin: auto;
+    width: 90%;
+    height: parStyles.getPropertyValue('height');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://c8.alamy.com/comp/2CE8R8W/cunning-smiling-man-with-surreal-huge-smile-and-big-mouth-looks-shocked-attracted-wondered-and-astonished-isolated-on-white-studio-background-copyspace-for-ad-human-emotions-marketing-offer-2CE8R8W.jpg');
+}
+#me{
+    width: 100%;
+   
+}
+
+
+@media (min-width: 1000px){
+    .container{
+        flex-basis: 45%;
+        flex-direction: row;
+        gap: 15px;
+        width: 90%;
+        margin: auto;
+    } 
+    .image{
+        margin: 0 auto;
+    }
+    #me{
+        display: none;
+    }
+    p{
+        font-size: 30px
+    }
+}
